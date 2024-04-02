@@ -717,6 +717,7 @@ img {
   padding: 8px 16px;
   outline: transparent;
   resize: none;
+  background-color: transparent;
 }
 
 .input-comment-field::placeholder {
