@@ -465,7 +465,7 @@ img {
 .footer-soc-block {
   max-width: 208px;
   display: block;
-  margin-right: 80px;
+  margin-right: auto;
 }
 
 .footer-soc-list {
@@ -507,6 +507,7 @@ img {
 
 .footer-form-block {
   margin-right: auto;
+  margin-left: 80px;
 }
 
 .footer-form-title {
@@ -693,6 +694,7 @@ img {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
+  font-size: 12px;
 }
 
 .input-comment-wrap {
@@ -769,7 +771,8 @@ img {
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
 }
 
@@ -777,6 +780,14 @@ img {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+}
+
+.input-check:focus + .input-check-text > .check-empty {
+  border-color: #4d5ae5;
+}
+
+.input-check:hover + .input-check-text > .check-empty {
+  border-color: #4d5ae5;
 }
 
 .input-check-text {
